@@ -20,3 +20,8 @@ function deviceInfo() {
 	navigator.notification.alert(info);
 	
 }
+
+function clickMe(){
+	info = "Twoja godnosc to Marcin Stanuch" + '\n';
+	navigator.notification.alert(info);
+}
