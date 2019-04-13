@@ -35,7 +35,7 @@ function internetConnect() {
             info = 'Jest internet' + '\n';
             navigator.notification.alert(info);
         }
-        esle{
+        else{
             info = 'Nie ma internetu' + '\n';
             navigator.notification.alert(info);
         }
