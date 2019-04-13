@@ -27,17 +27,5 @@ function clickMe(){
 }
 
 function internetConnect() {
-    let preloadVideo = true;
-    var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-    if (connection) {
-        if (connection.effectiveType === 'cellular') {
-            preloadVideo = false;
-            info = 'Jest internet' + '\n';
-            navigator.notification.alert(info);
-        }
-        else{
-            info = 'Nie ma internetu' + '\n';
-            navigator.notification.alert(info);
-        }
-    }
+    navigator.notification.alert(NetworkInformation.type);
 }
