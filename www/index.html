@@ -1,14 +1,34 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<script src="js/pgb.js"></script>
 		<script src="cordova.js"></script>
+        <style type="text/css">
+            <!--
+                #tabela td{
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                }
+            -->
+        </style>
 	</head>
 	<body onload="init()">
 		<h1>Hello World!</h1>
 		<p id="dp"></p>
 		<input type="button" onclick="deviceInfo()" value="Let me introduce myself!">
-		<input type="button" onclick="clickMe()" value="klikamy!">
+        <p></p>
+        <input type="button" onclick="clickMe()" value="klikamy!">
+        <table summary="creditCard" id="tabela">
+            <tbody>
+                <tr>
+                    <td>Marcin Stanuch</td>
+                    <td>mmm@ooo.pl</td>
+                    <td>Webside: brak</td>
+                    <td>Grupa: 1212</td>
+                    <td>Niestacjonarne</td>
+                </tr>
+            </tbody>
+        </table>
 	</body>
 </html>
