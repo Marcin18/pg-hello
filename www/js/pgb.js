@@ -27,5 +27,5 @@ function clickMe(){
 }
 
 function internetConnect() {
-    navigator.notification.alert(NetworkInformation.type);
+    navigator.notification.alert(NetworkInformation.type());
 }
