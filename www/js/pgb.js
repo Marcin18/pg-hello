@@ -27,6 +27,7 @@ function clickMe(){
 }
 
 function internetConnect() {
-    var effectiveType = NetworkInformation.effectiveType;
+    networkInformation = navigator.connection;
+    var effectiveType = networkInformation.effectiveType;
     navigator.notification.alert(effectiveType);
 }
